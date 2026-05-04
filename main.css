@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    font-family: "Cairo",sans-serif;
+    background: #f5f1e8;
+    direction: rtl;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.navbar{
+    padding: 10px 5;
+    background: white;
+
+    margin: 18px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+.container a:hover{
+    color: #b1151c;
+}
+.btn{
+    background: #b1151c;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.hero-section{
+    margin-top: 16px;
+    margin-bottom: 32px;
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    overflow: hidden;
+}
+.hero-section h1{
+    font-size: 2.5rem;
+    margin-bottom: 32px;
+    margin-top: 32;
+}
+.hero-section h3{
+    color: #555;
+    margin-bottom: 30px;
+}
+.content .btn{
+    padding: 12px 40px;
+    font-size: 1.1rem;
+}
+.floating-img{
+    position: absolute;
+    width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    z-index: -1;
+}
+.img-lift{
+    top: 50%;
+    left: 18%;
+    transform: rotate(17deg);
+}
+.img-right{
+    top: 50%;
+    right: 18%;
+    transform: rotate(-17deg);
+}
+.features-container{
+    max-width: 1100px;
+    margin: 0 auto padding 32px 32px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+.features-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 32px;
+    margin: 32px 32px;
+    padding: 32px;
+}
+.card{
+    background-color: #b1151c;
+    background-color: rgba(177, 21,28, 0.2);
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.card h3{
+    margin-top: 0;
+    margin-bottom: 3px;
+    line-height: .8;
+    color: #000000;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.card p{
+    margin-top: 0;
+    color: #000000;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+.container{
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.city-card{
+    display: flex;
+    flex-direction: row-reverse;
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    align-items: center;
+    direction: rtl;
+}
+.contents{
+    flex: 2;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.contents p b{
+    color: #b1151c;
+    font-weight: bold;
+}
+.image-box{
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+.image-box img{
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.city-card{
+    display: flex;
+    direction: rtl;
+    justify-content: space-between;
+    gap: 5px;
+    flex: 1;
+    text-align: right;
+}
+.contents{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    flex: 1;
+}
+.btn{
+    background-color: #b1151c;
+    color: white;
+    padding: 6px 20px;
+    height: fit-content;
+    text-decoration: none;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.video-section{
+    width: 70%;
+    max-width: 800px;
+    margin: 20px auto;
+    margin-top: 32px;
+    text-align: center ;
+    
+}
+.video-title{
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+    margin-right: 32px;
+    
+}
+.video-placeholder img{
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.video-placeholder video{
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    direction: rtl;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-links{
+    margin-bottom: 10px;
+}
+.footer-links a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+.footer-links a:hover{
+    color: #b1151c;
+}
+.copyright{
+    font-size: 14px;
+    color: #777;
+    margin: 10px 0;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.social i{
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+.social i:hover{
+    color: #b1151c;
+}
