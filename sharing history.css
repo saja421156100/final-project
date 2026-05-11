@@ -1,3 +1,11 @@
+:root{
+    --primary-red:#b1151c;
+    --primary-black: #000000;
+    --primary-brown:#452714;
+    --font-bold:60px;
+    --font-medium:48px;
+    --font-regular:37px;
+}
 html {
     font-size: 16px;
 }
@@ -48,7 +56,7 @@ body {
     color: #000000;
     line-height: 1.6;
     /* استبدلي path/to/your/image.jpg بمسار الصورة الحقيقي */
-    background-image: url('images/bg\ image.jpeg'); 
+    background-image: url('../media/bg_brawser.jpg'); 
     
     /* لجعل الصورة تغطي كامل الشاشة */
     background-size: cover; 
@@ -115,173 +123,130 @@ header {
 .btn-contact:hover {
     transform: translateY(-8px);
 }
-.hero-section{
-    margin-top: 16px;
-    margin-bottom: 32px;
+.main-wrapper {
+    display: flex;
+    justify-content: center; /* التوسط الأفقي */
+    align-items: center;     /* التوسط العمودي */
+    width: 100%;             /* تأكد أنها تأخذ كامل عرض الصفحة */
+    min-height: 100vh;       /* لتوسيطه في منتصف طول الشاشة */
+    direction: rtl;
+    overflow: hidden;  
+    text-align: center;      /* لمنع ظهور شريط التمرير إذا كان البوكس كبيراً */
+}
+.top-header{
+    color: var(--primary-brown);
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center;
     position: relative;
-    text-align: center;
-    padding: 100px 20px;
-    overflow: hidden;
-}
-.hero-section h1{
-    font-size: 37px;
-    margin-bottom: 32px;
-    margin-top: 32;
-}
-.hero-section h3{
-    color: #555;
-    margin-bottom: 30px;
+    top: 30px;
     font-size: 37px;
 }
-.hero-section p{
-    font-size: 37px;
-}
-.content .btn{
-    padding: 12px 40px;
-    font-size: 1.1rem;
-}
-.floating-img{
-    position: absolute;
-    width: 200px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    z-index: -1;
-}
-.img-lift{
-    top: 40%;
-    left: 96px;
-    transform: rotate(17deg);
-}
-.img-right{
-    top: 40%;
-    right: 96px;
-    transform: rotate(-17deg);
-}
-.features-container{
-    max-width: 1100px;
-    margin: 0 auto padding 32px 32px;
+.heritage-card {
+    /* المقاسات المطلوبة */
+    width: 1121px; 
+    height: 912px;
+    
+    /* التوسط داخل الصفحة */
+    margin: 40px auto; 
+    
+    /* توزيع المساحة الداخلية */
+    padding: 150px 80px; 
+    
+    /* التأكد من أن الـ Padding لا يزيد من حجم الصندوق */
+    box-sizing: border-box; 
 
-}
-.features-grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 32px;
-    margin: 32px 32px;
-    padding: 32px;
-}
-.card{
-    background-color: #b1151c;
-    background-color: rgba(177, 21,28, 0.2);
-    padding: 20px;
+    /* بقية التنسيقات */
+    position: relative;
+    display: flex;
     flex-direction: column;
-    border-radius: 15px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-.card h3{
-    margin-top: 0;
-    margin-bottom: 3px;
-    line-height: .8;
-    color: #000000;
-    font-size: 1.4rem;
-    text-align: center;
-}
-.card p{
-    margin-top: 0;
-    color: #000000;
-    line-height: 1.8;
-    font-size: 0.95rem;
-}
-.container2{
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-}
-.city-card{
-    display: flex;
-    flex-direction: row-reverse;
-    background: #fff;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    justify-content: space-between; /* لتوزيع النص في المنتصف والشعار في الأسفل */
     align-items: center;
-    direction: rtl;
-}
-.contents{
-    flex: 2;
-    padding-left: 20px;
-    padding-right: 30px;
-}
-.contents p b{
-    color: #b1151c;
-    font-weight: bold;
-}
-.image-box{
-    width: 200px;
-    height: 100px;
-    overflow: hidden;
     border-radius: 12px;
-    flex-shrink: 0;
-}
-.image-box img{
-    width: 100%;
-    height: 100px;
-    border-radius: 8px;
-    object-fit: cover;
-}
-.city-card{
-    display: flex;
-    direction: rtl;
-    justify-content: space-between;
-    gap: 5px;
-    flex: 1;
-    text-align: right;
-}
-.contents{
-    display: flex;
-    align-items: center;
-    margin: 0;
-    flex: 1;
-}
-.btn{
-    background-color: #b1151c;
-    color: white;
-    padding: 6px 20px;
-    height: fit-content;
-    text-decoration: none;
-    border-radius: 5px;
-    white-space: nowrap;
-    font-size: 14px;
-}
-.video-section{
-    width: 70%;
-    max-width: 800px;
-    margin: 20px auto;
-    margin-top: 32px;
-    text-align: center ;
-    
-}
-.video-title{
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 30px;
-    font-weight: bold;
-    margin-right: 32px;
-    
-}
-.video-placeholder img{
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 20px;
     overflow: hidden;
+    z-index: 1;
+    box-shadow:10px 10px 25px rgba(185, 170, 140, .89);    
+}
 
+.heritage-card::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background-image: url("images/bg.jpeg"); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4; 
+    z-index: -1; 
+    
 }
-.video-placeholder video{
-    width: 100%;
-    display: block;
-    border-radius: 20px;
+.hero-title{
+    font-size: 37px;
+    color: var(--primary-black);
+    margin-top: 0;
+    margin-bottom: 30px;
+    flex-direction: row-reverse;
+}
+.main-paragraph{
+    font-size: var(--font-medium);
+    color: var(--primary-brown);
+    margin-bottom: 10px;
+}
+.sub-message{
+    font-size: var(--font-regular);
+    color: var(--primary-black);
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+.highlight-red{
+    color: var(--primary-red);
+}
+.btn-explore{
+    background-color: var(--primary-red);
+    color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 6px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: transform 0.2s , background 0.3s;
+}
+.btn-explore:hover{
+    background-color: #8e1116;
+    transform: scale(1.05);
+}
+.card-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+.stitch-info {
+    text-align: right;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5;
+    padding: 15px 25px; /* زيادة التباعد الداخلي */
+    background-color: rgba(210, 193, 176, 1); /* خلفية خفيفة مثل Figma */
+    border-radius: 8px; 
+    border-right: 5px solid var(--primary-brown); 
+    position: absolute; 
+    bottom: 170px;
+    left: 40px;
+    z-index: 2;
+}
+.footer-logo {
+    width: 473px; 
+    height: 354px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 55px;
+    right: 45px;
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: 10px 10px 25px rgba(177, 131, 65, 0.7);
 }
 /* Footer */
 footer {

@@ -1,3 +1,11 @@
+:root{
+    --primary-red:#b1151c;
+    --primary-black: #000000;
+    --primary-brown:#452714;
+    --font-bold:60px;
+    --font-medium:48px;
+    --font-regular:37px;
+}
 html {
     font-size: 16px;
 }
@@ -58,6 +66,7 @@ body {
     
     /* لضمان أن الخلفية تغطي كامل طول الصفحة */
     min-height: 100vh;
+    background-image: ;
 }
 
 .container {
@@ -115,174 +124,53 @@ header {
 .btn-contact:hover {
     transform: translateY(-8px);
 }
-.hero-section{
-    margin-top: 16px;
+h2{
+    margin-top: 32px;
+    font-size: var(--font-regular);
+    color: var(--primary-black);
     margin-bottom: 32px;
-    position: relative;
-    text-align: center;
-    padding: 100px 20px;
-    overflow: hidden;
 }
-.hero-section h1{
-    font-size: 37px;
-    margin-bottom: 32px;
-    margin-top: 32;
+p{
+    margin-top: 32px;
+    font-size:27px;
+    color: var(--primary-black);
 }
-.hero-section h3{
-    color: #555;
-    margin-bottom: 30px;
-    font-size: 37px;
-}
-.hero-section p{
-    font-size: 37px;
-}
-.content .btn{
-    padding: 12px 40px;
-    font-size: 1.1rem;
-}
-.floating-img{
-    position: absolute;
-    width: 200px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    z-index: -1;
-}
-.img-lift{
-    top: 40%;
-    left: 96px;
-    transform: rotate(17deg);
-}
-.img-right{
-    top: 40%;
-    right: 96px;
-    transform: rotate(-17deg);
-}
-.features-container{
-    max-width: 1100px;
-    margin: 0 auto padding 32px 32px;
-
-}
-.features-grid{
+.hertage-grid{
+    margin-top: 32px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 32px;
-    margin: 32px 32px;
-    padding: 32px;
-}
-.card{
-    background-color: #b1151c;
-    background-color: rgba(177, 21,28, 0.2);
-    padding: 20px;
-    flex-direction: column;
-    border-radius: 15px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-.card h3{
-    margin-top: 0;
-    margin-bottom: 3px;
-    line-height: .8;
-    color: #000000;
-    font-size: 1.4rem;
-    text-align: center;
-}
-.card p{
-    margin-top: 0;
-    color: #000000;
-    line-height: 1.8;
-    font-size: 0.95rem;
-}
-.container2{
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-}
-.city-card{
-    display: flex;
-    flex-direction: row-reverse;
-    background: #fff;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    align-items: center;
-    direction: rtl;
-}
-.contents{
-    flex: 2;
-    padding-left: 20px;
-    padding-right: 30px;
-}
-.contents p b{
-    color: #b1151c;
-    font-weight: bold;
-}
-.image-box{
-    width: 200px;
-    height: 100px;
-    overflow: hidden;
-    border-radius: 12px;
-    flex-shrink: 0;
-}
-.image-box img{
+    gap: 40px;
     width: 100%;
-    height: 100px;
-    border-radius: 8px;
-    object-fit: cover;
-}
-.city-card{
-    display: flex;
-    direction: rtl;
-    justify-content: space-between;
-    gap: 5px;
-    flex: 1;
-    text-align: right;
-}
-.contents{
-    display: flex;
-    align-items: center;
-    margin: 0;
-    flex: 1;
-}
-.btn{
-    background-color: #b1151c;
-    color: white;
-    padding: 6px 20px;
-    height: fit-content;
-    text-decoration: none;
-    border-radius: 5px;
-    white-space: nowrap;
-    font-size: 14px;
-}
-.video-section{
-    width: 70%;
-    max-width: 800px;
-    margin: 20px auto;
-    margin-top: 32px;
-    text-align: center ;
-    
-}
-.video-title{
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 30px;
-    font-weight: bold;
-    margin-right: 32px;
-    
-}
-.video-placeholder img{
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 20px;
-    overflow: hidden;
 
 }
-.video-placeholder video{
+.hertage-card{
     width: 100%;
-    display: block;
-    border-radius: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    gap: 15px;
 }
+.hertage-card h3{
+    font-size:32px;
+    color: var(--primary-brown);
+    margin-bottom: 15px;
+}
+.hertage-card p{
+    font-size: 24px;
+    color: var(--primary-black);
+}
+.hertage-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
 /* Footer */
 footer {
     background-color: #ffffff;
@@ -290,7 +178,8 @@ footer {
     flex-direction: column; /* لترتيب الصفوف تحت بعض */
     align-items: center;    /* لتوسيط كل شيء في منتصف الصفحة */
     padding: 40px 0;
-    gap: 12px;             /* مسافة بين الصف العلوي وصف الحقوق */
+    gap: 12px;   
+    margin-top: 60px;          /* مسافة بين الصف العلوي وصف الحقوق */
 }
 .footer-top{
     display: flex;
